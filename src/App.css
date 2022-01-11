@@ -1,3 +1,161 @@
+:root{
+  --max-width: 1170px;
+  --clr-white: #fff;
+  --fixed-width: 320px;
+  --clr-black: #222;
+  --radius: 0.25rem;
+  --clr-grey-10: hsl(210, 36%, 96%);
+}
+
+::-webkit-scrollbar {display:none;}
+
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+}
+
+html,body{
+  background-color: hotpink;
+  overflow: hidden;
+}
+
+button{
+  cursor: pointer;
+}
+
+.item{
+  padding: 10px 10px;
+  border-radius: 5px;
+
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* #30ff2a*/
+.showBirthday {
+  /* background-color: #b1e9ad; */
+  background: linear-gradient( 45deg, purple, cyan, pink, yellow, violet);
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  max-width: var(--max-width);
+}
+
+
+.react-datepicker-wrapper {
+  width: auto !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.avatar {
+  width: fit-content;
+  margin: 0px auto;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(auto, 1fr);
+}
+
+.avatarImg {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form {
+  text-align: center;
+  background: var(--clr-white);
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+}
+.form input {
+  background: var(--clr-grey-10);
+  border-color: transparent;
+  border-radius: var(--radius);
+  padding: 0.25rem 0.5rem;
+}
+.form-control {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+.form button {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  border-color: transparent;
+  margin: 1rem 0 0.5rem 0;
+  letter-spacing: var(--spacing);
+  padding: 0.15rem 0.25rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.card {
+  text-align: center; 
+  max-width: 230px;
+  height: 330px;
+  padding: 5px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: var(--radius);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +194,5 @@
     transform: rotate(360deg);
   }
 }
+
+
